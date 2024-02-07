@@ -1,0 +1,109 @@
+Quick walkthrough about my Skillsets:
+Brief:
+Git/GitHub:
+
+Version Control: Manage and track versions of code, enabling multiple developers to work on the same project without conflicts.
+Collaboration: Facilitate team collaboration through pull requests, code reviews, and issue tracking.
+Branch Management: Create and manage branches for feature development, bug fixes, and experimentation.
+Release Management: Tag and release versions of software, maintain release notes, and manage deployment.
+Jenkins:
+
+Continuous Integration (CI): Automatically test code changes to ensure they don't break the build or introduce bugs.
+Continuous Deployment (CD): Automate the deployment process, ensuring that new code changes are automatically and reliably deployed to production.
+Build Automation: Compile, build, and package software automatically.
+Pipeline Orchestration: Create and manage complex workflows that define how software is built, tested, and deployed.
+Ansible:
+
+Configuration Management: Standardize and automate the setup of servers and applications.
+Application Deployment: Automate the deployment of applications across various environments.
+Infrastructure as Code (IaC): Manage and provision infrastructure through code, ensuring environment consistency.
+Automation of Repetitive Tasks: Automate routine tasks like system updates, user management, and software installations.
+Docker:
+
+Containerization: Package applications and their dependencies into containers for consistent deployment across different environments.
+Isolation: Run applications in isolated environments to prevent conflicts and ensure security.
+Microservices Architecture: Facilitate the development and deployment of microservices by containerizing individual services.
+Development Environment Standardization: Create consistent development environments that mirror production settings.
+Kubernetes:
+
+Container Orchestration: Manage and scale containers across multiple hosts.
+Load Balancing: Automatically distribute application traffic across containers for better performance and reliability.
+Self-healing Systems: Automatically replace containers that fail, ensuring high availability.
+Automated Rollouts/Rollbacks: Manage application updates and rollbacks, minimizing downtime and risks.
+Apache Tomcat:
+
+Web Application Deployment: Deploy and manage Java-based web applications.
+Performance Tuning: Optimize the performance of web applications by tuning Tomcat settings.
+Security Management: Implement security measures for web applications, including SSL/TLS configuration and access control.
+Logging and Monitoring: Monitor application performance and troubleshoot issues using Tomcat's logging capabilities.
+
+
+
+1. Code Collaborations --> GIT
+
+
+Git is a distributed version control system, widely used for source code management in software development. It allows multiple developers to work on a single project without conflicting with each other's changes
+
+REMEMBER: WORKFLOW --> WSLR (WORKING DIRECTORY -- STAGING AREA -- LOCAL REPO -- REMOTE REPO)
+
+* git init: Initializes a new Git repository. This command creates a new subdirectory named .git that houses all of your project's history and configuration settings.
+
+* git clone [URL]: Creates a copy of an existing Git repository. The URL points to the repository you want to clone, which could be located on a remote server like GitHub, GitLab, etc.
+
+* git add [file]: Stages a file for commit. This command tells Git that you want to include updates to a particular file in the next commit. However, git add doesn't affect the repository until you run git commit.
+
+* git commit -m "[commit message]": Records changes to the repository. The -m flag allows you to add a commit message in-line. Commit messages are important for explaining what changes you've made.
+
+* git status: Displays the state of the working directory and the staging area. It lets you see which changes have been staged, which haven't, and which files aren't being tracked by Git.
+
+* git push [alias] [branch]: Uploads your commits to a remote repository. The alias is usually origin, and the branch is the branch you want to push.
+
+* git pull [alias] [branch]: Fetches and merges changes from a remote repository into your local branch. The alias and branch are usually the remote repository and branch you want to pull from.
+
+* git branch: Lists, creates, or deletes branches. Branches are used to work on different versions of a repository at one time.
+
+* git checkout [branch]: Switches to a specified branch and updates the working directory. This command is used to switch between different branches in a repository.
+
+* git merge [branch]: Merges the specified branch’s history into the current branch. This is a common way to combine changes from one branch into another.
+
+* git diff: Shows the file differences which are not yet staged.
+
+* git reset: Resets the staging area to match the most recent commit, but leaves the working directory unchanged. It's a way to undo changes that haven't been committed yet.
+
+* git log: Displays the commit history for the current branch, showing a list of commits with their details.
+
+* git fetch [alias]: Downloads content from a remote repository, but it doesn't integrate any of these new data into your working files. Fetch is great for getting a fresh view on all the things that happened in a remote repository.
+
+* git rm [file]: Removes files from the working directory and stages the deletion.
+
+* git stash: Temporarily stores all the modified tracked files. This is useful for saving your work-in-progress changes without committing them, so you can switch branches and work on something else.
+
+* git stash pop: Applies stashed changes back to your working directory and removes them from the stash list.
+
+* git rebase [branch]: Moves or combines a sequence of commits to a new base commit. Rebasing is a way to reapply commits on top of another base tip.
+
+* git cherry-pick [commit]: Applies the changes introduced by some existing commits. This command is useful for applying a few commits from one branch onto another.
+
+* git revert [commit]: Creates a new commit that undoes all of the changes made in a specified commit, then applies it to the current branch.
+
+* git tag [tag-name]: Marks a specific point in the repository’s history as important. Typically, this is used to mark release points (v1.0, v2.0 and so on).
+
+* git remote add [alias] [url]: Adds a remote repository to your project. The alias is a shorthand name for the remote URL.
+
+* git remote -v: Lists all the remote connections you have to other repositories.
+
+* git fetch --all: Fetches all registered remotes and their branches.
+
+* git pull --rebase [alias] [branch]: This is a combination of fetch and rebase instead of fetch and merge. This command is used when you want to reapply your local changes on top of the remote changes.
+
+* git config: Lets you view and set configuration options. For example, you can set your username and email, which are important for commit messages.
+
+* git blame [file]: Shows who last modified each line of a file. This is useful for understanding who made specific changes.
+
+* git log --graph: Shows the commit history in a graphical representation.
+
+* git bisect: Used to find the commit that introduced a bug by using a binary search algorithm.
+
+* git show [commit]: Shows various types of objects (commits, tags, etc.), typically used to view information about a specific commit.
+
+
